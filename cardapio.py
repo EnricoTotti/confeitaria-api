@@ -9,13 +9,13 @@ def buscar_cardapio():
     cardapio = cursor.fetchall()
     cursor.close()
     conn.close()
+
     return jsonify(cardapio)
 
 def buscar_por_id(item_id):
     return{
         "id": 1,
         "nome": "Chocomoça",
-        "descricao": "Bolo de chocolate com ninho",
-        "preco": 50.00,
-        "foto": ""
+        "descricao": "Bolo de chocolate com leite ninho",
+        "valor": "49.99",
     }

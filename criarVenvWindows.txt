@@ -1,0 +1,7 @@
+python -m venv .venv //cria o ambiente de virtual
+
+.venv\Scripts\activate //liga o ambiente virtual
+
+pip install -r requirements.txt //instala as bibliotecas python
+
+pip freeze > requirements.txt 
